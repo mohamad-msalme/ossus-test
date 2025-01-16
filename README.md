@@ -27,6 +27,7 @@ This is a customizable WYSIWYG (What You See Is What You Get) editor built with 
 - **Change Mode During Render**: The editor `console.warn` in case we switch between `controlled and uncontrolled mode`
 
 ## Exemples
+**you can found the exemples in more details inside exemple folder**
 
 ### **Controlled Editor**
 - in controlled mode in case you pass defaultValue as `string` the editor will ignore this value
