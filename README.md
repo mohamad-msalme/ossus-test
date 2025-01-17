@@ -1,6 +1,7 @@
 # WYSIWYG Editor Component
 
-This is a customizable WYSIWYG (What You See Is What You Get) editor built with React and Draft.js. It offers both controlled and uncontrolled modes, toolbar customization, and many built-in styling and block features. You can use it as a rich text editor for a wide range of applications such as content management systems, blogging platforms, or any app requiring rich text editing.
+This is a customizable WYSIWYG (What You See Is What You Get) editor built with React and Draft.js. 
+It offers both controlled and uncontrolled modes, toolbar customization, and many built-in styling and block features. You can use it as a rich text editor for a wide range of applications such as content management systems, blogging platforms, or any app requiring rich text editing.
 
 ## Features
 
@@ -8,7 +9,7 @@ This is a customizable WYSIWYG (What You See Is What You Get) editor built with 
 
   - **Controlled Mode**: You can pass a value (`EditorState`) and an `onChange` function to manage the editor state externally.
     - In case you need to initialize the editor content asynchronously, you can pass `defaultValue` as a `Promise<string>`. The editor will handle the promise internally and update the content once the promise resolves.
-  - **Uncontrolled Mode**: The editor manages its own state internally you can init the editor content by pass `defaultValue` as `string`.
+  - **Uncontrolled Mode**: The editor manages its own state internally you can init the editor content by pass `defaultValue` as `string` or `Promise<string>`.
 
 - **Customizable Toolbar**: You can provide a custom toolbar using the `renderCustomToolbar` prop. If not provided, a default toolbar is rendered with inline and block style controls.
 
@@ -167,7 +168,7 @@ const CustomToolbarEditor: React.FC = () => {
 ```
 
 ### **Uncontrolled Editor**
-- you can pass defaultValue as string in `Uncontrolled Editor`
+- you can pass defaultValue as `string` or as `Promise<string>` in `Uncontrolled Editor`
 ```tsx
 const UncontrolledEditor: React.FC = () => {
   // Uncontrolled editor with internal state
